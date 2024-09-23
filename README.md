@@ -24,7 +24,7 @@ This data engineering project focuses on ingesting energy data from **Gridwatch*
    Yearly, monthly, and weekly summaries are generated using SQL queries. These summaries provide insights into energy consumption trends, including identifying peak demand periods, comparing year-over-year changes, and analyzing seasonal variations.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/4009e77d-9636-43af-b024-65f44ad83d60" alt="Data Pipeline Diagram"/>
+  <img src="https://github.com/user-attachments/assets/cb10b322-5fa5-4553-bc13-ee7fd3c63d6e" alt="Data Pipeline Diagram"/>
 </p>
 
 ### 5. Visualization in Power BI
