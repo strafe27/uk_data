@@ -30,4 +30,7 @@ This data engineering project focuses on ingesting energy data from **Gridwatch*
 ### 5. Visualization in Power BI
    The summarized data is visualized using **Power BI**. The dashboards include interactive graphs and charts that allow users to explore the data, view trends over time, and gain actionable insights into energy consumption.
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4b183c2f-4326-4c28-9350-0e9453cdbcad" alt="Data Pipeline Diagram"/>
+</p>
 The CSV and db data can be found in data.rar
