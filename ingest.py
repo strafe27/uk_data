@@ -40,6 +40,5 @@ df_raw['date'] = df_raw['timestamp'].dt.date
 df_raw['year'] = df_raw['timestamp'].dt.year
 df_raw['month'] = df_raw['timestamp'].dt.month
 df_raw['week'] = df_raw['timestamp'].dt.isocalendar().week
-
 df_raw.to_sql('stg_power_data', conn, if_exists='replace', index=False)
 print("Data from CSV loaded into 'stg_power_data' table.")
