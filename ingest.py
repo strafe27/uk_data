@@ -41,41 +41,5 @@ df_raw['year'] = df_raw['timestamp'].dt.year
 df_raw['month'] = df_raw['timestamp'].dt.month
 df_raw['week'] = df_raw['timestamp'].dt.isocalendar().week
 
-# Create staging table with additional columns for date, week, month, and year
-c.execute("""
-    CREATE TABLE IF NOT EXISTS stg_power_data (
-        id INTEGER PRIMARY KEY,
-        timestamp DATETIME,
-        date DATE,
-        week INTEGER,
-        month INTEGER,
-        year INTEGER,
-        demand REAL,
-        frequency REAL,
-        coal REAL,
-        nuclear REAL,
-        ccgt REAL,
-        wind REAL,
-        pumped REAL,
-        hydro REAL,
-        biomass REAL,
-        oil REAL,
-        solar REAL,
-        ocgt REAL,
-        french_ict REAL,
-        dutch_ict REAL,
-        irish_ict REAL,
-        ew_ict REAL,
-        nemo REAL,
-        other REAL,
-        north_south REAL,
-        scotland_england REAL,
-        ifa2 REAL,
-        intelec_ict REAL,
-        nsl REAL,
-        vkl_ict REAL
-    )
-""")
-
 df_raw.to_sql('stg_power_data', conn, if_exists='replace', index=False)
 print("Data from CSV loaded into 'stg_power_data' table.")
